@@ -45,6 +45,7 @@
 }
 
 .recruit-visual__txt {
+	word-break: break-all;
   /*display: block;
 	transition: all .4s;*/
 }

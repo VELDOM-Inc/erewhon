@@ -295,45 +295,11 @@ span.snav__link:hover {
 
 /*----- h5 -----*/
 .h5 {
-	margin: 0 0 40px;
-	padding: 0 0 25px;
-	color: var(--green);
-	font-size: 2.2rem;
-	font-weight: 500;
-	position: relative;
-	line-height: 1.4;
 }
-
-.h5::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: inline-block;
-	width: 60px;
-	height: 1px;
-	background-color: var(--green);
-}
-
-.h5._center_ {
-	text-align: center;
-}
-
-.h5._center_::after {
-	left: 50%;
-	transform: translateX(-50%);
-}
-
 
 /*----- h6 -----*/
 .h6 {
-	margin: 0 0 20px;
-	font-size: 1.8rem;
-	line-height: 1.2;
-	font-weight: 600;
-	color: var(--black);
 }
-
 
 
 /* ============================================================ */
@@ -753,8 +719,6 @@ span.snav__link:hover {
 }
 
 
-
-
 /* ============================================================ */
 /* フォームスタイル */
 /* ============================================================ */
@@ -765,7 +729,7 @@ span.snav__link:hover {
 	border: none;
 	color: var(--black);
 	border-radius: 4px;
-	background: var(--gray);
+	background: #f1f1f1;
 	box-sizing: border-box;
 	font-size: 1.4rem;
 }
@@ -821,7 +785,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	border: none;
 	color: var(--black);
 	border-radius: 4px;
-	background: var(--gray);
+	background: #f1f1f1;
 	box-sizing: border-box;
 	font-size: 1.4rem;
 	resize: vertical;
@@ -971,7 +935,7 @@ input[type="checkbox"]:checked + .__txt::before {
 	border: none;
 	color: var(--black);
 	border-radius: 4px;
-	background: var(--gray);
+	background: #f1f1f1;
 	-webkit-appearance: none;
  	appearance: none;
 	font-size: 1.4rem;
@@ -1140,244 +1104,6 @@ input[type="checkbox"]:checked + .__txt::before {
 	left: 0;
 	line-height: 1.2;
 }
-
-/* list-alpha */
-.list-alpha {
-  list-style: none;
-  padding-left: 0;
-}
-
-.list-alpha > .list-alpha__item {
-  counter-increment: count-ex03;
-  position: relative;
-	padding: 0 0 0 25px;
-}
-
-.list-alpha .list-alpha__item {
-	counter-increment: count-ex03;
-}
-
-.list-alpha .list-alpha__item::before {
- 	content: counter(count-ex03, lower-alpha) "." ;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-
-/* list-roman */
-.list-roman {
-  list-style: none;
-  padding-left: 0;
-	counter-reset: number 0;
-}
-
-.list-roman > .list-roman__item {
-  counter-increment: number;
-  position: relative;
-	padding: 0 0 0 25px;
-}
-
-.list-roman .list-roman__item {
-	counter-increment: number;
-}
-
-.list-roman .list-roman__item::before {
- 	content: counter(number, lower-roman) "." ;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-
-/* ============================================================ */
-/* paginationスタイル */
-/* ============================================================ */
-.pagination {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.nav-links {
-}
-
-.page-numbers:first-child {
-	margin-left: 0;
-}
-
-.page-numbers:last-child {
-	margin-right: 0;
-}
-
-.page-numbers._prev_ {
-	justify-content: flex-start;
-}
-
-.page-numbers._next_ {
-	justify-content: flex-end;
-}
-
-.page-numbers {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	line-height: 1.6;
-	font-size: 1.5rem;
-	color: var(--black);
-	font-weight: 500;
-	margin: 0 10px;
-  background: linear-gradient(0deg, var(--green), var(--green)) no-repeat right bottom / 0 var(--bg-h2);
-  transition: background-size 350ms;
-  padding-bottom: 1px;
-	text-align: center;
-}
-
-a.page-numbers:hover ,
-a.page-numbers:focus-visible {
-  background-size: 100% var(--bg-h2);
-  background-position-x: 0;
-}
-
-.page-numbers:hover {
-	color: var(--green);
-	opacity: 1;
-}
-
-.page-numbers._prev_:hover ,
-.page-numbers._next_:hover ,
-.page-numbers._prev_:hover .__txt ,
-.page-numbers._next_:hover .__txt {
-	background: none;
-}
-
-.page-numbers._nolink_ ,
-.page-numbers._nolink_:hover ,
-.page-numbers._nolink_ .__ico {
-	color: #999;
-	cursor: default;
-	transform: translateX(0) translateY(0) !important;
-}
-
-.page-numbers.current {
-	color: var(--green);
-  background-size: 100% var(--bg-h2);
-	background-position-x: 0;
-}
-
-.page-numbers .__ico {
-	color: var(--green);
-	font-size: 6.5rem;
-	line-height: 1.0;
-	transition: all 0.3s ease;
-	position: relative;
-}
-
-.page-numbers._prev_ .__ico {
-	margin: -5px 10px 0 0;
-}
-
-.page-numbers._next_ .__ico {
-	margin: -5px 0 0 10px;
-}
-
-.page-numbers._prev_:hover .__ico {
-	transform: translateX(-8px) translateY(0);
-}
-
-.page-numbers._next_:hover .__ico {
-	transform: translateX(8px) translateY(0);
-}
-
-
-/* ============================================================ */
-/* pagerスタイル */
-/* ============================================================ */
-.pager {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto;
-	gap: 0 5px;
-	grid-template-areas: "prev list next";
-	margin: 30px 0 0;
-	line-height: 1.0;
-}
-
-.pager__item {
-	display: flex;
-}
-
-.pager__item._prev_ {
-	grid-area: prev;
-	justify-content: flex-start;
-}
-.pager__item._next_ {
-	grid-area: next;
-	justify-content: flex-end;
-}
-.pager__item._list_ {
-	grid-area: list;
-	justify-content: center;
-}
-
-.pager__link {
-	display: inline-flex;
-	justify-content: center;	
-	align-items: center;
-	text-decoration: none;
-	color: var(--black);
-	text-align: center;
-	font-weight: 500;
-	font-size: 1.5rem;
-	line-height: 1.0;
-	transition: all .4s;
-	position: relative;
-	padding: 0;
-}
-
-.pager__link:hover {
-	opacity: 1;
-	color: var(--green);
-}
-
-.pager__link .__ico {
-	position: relative;
-	z-index: 2;
-	top: -2px;
-  transition: all 0.3s ease;
-	color: var(--green);
-	font-size: 6.5rem;
-}
-
-.pager__item._next_ .pager__link .__ico {
-	right: 0;
-}
-
-.pager__item._next_ .pager__link:hover .__ico {
-	transform: translateX(8px) translateY(0);
-}
-
-.pager__item._prev_ .pager__link .__ico {
-	left: 0;
-}
-
-.pager__item._prev_ .pager__link:hover .__ico {
-	transform: translateX(-8px) translateY(0);
-}
-
-.pager__link .__txt {
-	background: none;
-}
-
-.pager__item._next_ .pager__link .__txt {
-	margin: 0 15px 0 0;
-}
-
-.pager__item._prev_ .pager__link .__txt {
-	margin: 0 0 0 15px;
-}
-
 
 /* ============================================================ */
 /* columnスタイル */

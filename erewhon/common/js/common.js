@@ -128,7 +128,7 @@ function PageTopAnime() {
 			}
 		}
 	
-	if (isSP()) { //SP ver
+	if (window.matchMedia('(max-width: 768px)').matches) {
 		if(scroll+wH >= (footerPos+15)) {
 			var pos = (scroll+wH) - footerPos+15 
 			$('.entry-btn').css('bottom',pos);	
@@ -137,6 +137,8 @@ function PageTopAnime() {
 				$('.entry-btn').css('bottom','15px');
 			}
 		}
+	} else {
+		// それ以外の処理
 	}
 }
 
