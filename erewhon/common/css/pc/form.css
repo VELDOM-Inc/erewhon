@@ -67,6 +67,10 @@
 	}
 }
 
+.contact-form .table .address-text  {
+	max-height: 38px;
+}
+
 .alert {
 	margin: 10px 0 0;
 	font-weight: 700;

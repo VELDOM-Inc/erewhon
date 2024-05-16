@@ -7,12 +7,10 @@
 ------------------------------------------------------------ */
 .everyday-block {
 	padding: 56px 0 80px;
-	/*padding: 40px 0;*/
 }
 
 .everyday-block:last-child {
 	padding: 56px 0 100px;
-	/*padding: 40px 0 100px;*/
 }
 
 .everyday-block._white_ {
