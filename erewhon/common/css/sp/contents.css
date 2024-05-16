@@ -11,7 +11,7 @@
 
 .contents__inner {
 	width: 100%;
-	padding: 0 15px;
+	padding: 56px 20px 100px;
 }
 
 .contents__inner ._col2_ {
@@ -150,7 +150,6 @@
 .h1 {
 	width: 100%;
 	height: 200px;
-	background-size: cover;
 	font-size: 2.8rem;
 	line-height: 1.2;
 	color: var(--white);
@@ -159,6 +158,8 @@
 	z-index: 1;
 	position: relative;
 	letter-spacing: 1.4px;
+	background: url("../../img/common/bg_ttl_base_sp.jpg") center center no-repeat;
+	background-size: cover;
 }
 
 .h1._everyday_ {
@@ -199,6 +200,10 @@
 .h1__ttl .__jp {
 	border-bottom: 4px solid var(--white);
 	padding: 0 0 15px;
+}
+
+.h1__ttl .__jp._error_ {
+	font-size: 2.3rem;
 }
 
 
