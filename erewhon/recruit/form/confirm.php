@@ -46,14 +46,14 @@ require_once("./src/bootstrap.php");
 				<!-- .contact-form -->
 				<div id="form" class="contact-form">
 					<div class="contact-form__inner">
-						<div class="box__inner mb60 mb30_sp">
+						<div class="box__inner mb60 mb0_sp">
 							<p class="txt_center txt_mplus">ご入力内容を確認いただき、よろしければ「入力内容を送信する」ボタンを、<br class="pc_view">修正する場合は「修正する」ボタンをクリックしてください。</p>
 						</div>
 
 						<form method="post">
 							<div class="contents-inner" id="js-scrollspy">
 								<div class="contents-main">
-									<table class="table _no-border_ _sp-col1_ mb45">
+									<table class="table _no-border_ _sp-col1_ mb45 mb0_sp">
 										<tbody class="table__body">
 											<tr>
 												<th class="_black_ text16">希望職種</th>
@@ -115,7 +115,7 @@ require_once("./src/bootstrap.php");
 								<!-- .contents-side -->
 							</div>
 
-							<div class="al-fc">
+							<div class="al-fc box__inner">
 								<button type="button" class="btn-arrow _gray_ _order2_ _w-l_ _cancel_" onclick="window.location='./#form';">
 									<span class="__ico icon-txt_link_arrow_left" aria-hidden="true"></span>
 									<span class="__txt">修正する</span>

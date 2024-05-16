@@ -46,7 +46,7 @@
 
 						<div class="contents-inner" id="js-scrollspy">
 							<div class="contents-main">
-								<h2 class="h4 txt_center">ご応募いただきありがとうございました</h2>
+								<h2 class="h4 txt_center">ご応募いただき<br class="sp_view">ありがとうございました</h2>
 								<p class="txt_center txt_left_sp mb40 txt_mplus">この度はご応募いただき誠にありがとうございました。<br>
 									改めて担当者よりご連絡をさせていただきます。</p>
 
@@ -59,7 +59,7 @@
 							</div>
 
 							<!-- .contents-side -->
-							<aside class="contents-side _form_">
+							<aside class="contents-side _form_ mt0_sp">
 								<nav class="snav">
 									<ul class="snav__list">
 										<li class="snav__item">

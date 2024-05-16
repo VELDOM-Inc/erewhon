@@ -49,10 +49,10 @@ require_once("./src/bootstrap.php");
 					<!-- .contact-form -->
 					<div id="form" class="contact-form">
 						<div class="contact-form__inner">
-							<div class="box__inner mb80">
-								<h2 class="h4">会社のこと、採用に関することなど、<br>どうぞお気軽にお問い合わせください。</h2>
+							<div class="box__inner mb80 mb0_sp">
+								<h2 class="h4">会社のこと、<br class="sp_view">採用に関することなど、<br>どうぞお気軽に<br class="sp_view">お問い合わせください。</h2>
 								<p class="txt_center txt_mplus">3営業日以内にご回答させていただきます。<br>
-									フォームでのお問い合わせには、 時間を要する場合がございます。お急ぎの方は、<a href="tel:097-552-2251">お電話</a>にてお問い合わせ下さい。</p>
+								フォームでのお問い合わせには、<br class="sp_view">時間を要する場合がございます。<br class="sp_view">お急ぎの方は、<a href="tel:097-552-2251">お電話</a>にてお問い合わせ下さい。</p>
 							</div>
 
 							<div class="contents-inner" id="js-scrollspy">
@@ -116,8 +116,15 @@ require_once("./src/bootstrap.php");
 													</div>
 												</th>
 												<td class="">
-													<span class="text16 txt_bold">〒</span> <input type="text" name="zip" class="form-text _w-m_ p-postal-code mb10" value="<?php echo e($form->get('zip')); ?>" placeholder="例）0000000">
-													<input type="text" name="address" class="form-text p-region p-locality p-street-address p-extended-address" value="<?php echo e($form->get('address')); ?>" placeholder="例）大分県大分市三川新町1丁目2番23号">
+													<ul class="contact-form-flex">
+														<li class="contact-form-flex__item">
+															<span class="text16 txt_bold __txt">〒</span> 
+															<input type="text" name="zip" class="form-text _w-m_ p-postal-code" value="<?php echo e($form->get('zip')); ?>" placeholder="例）0000000">
+														</li>
+														<li class="contact-form-flex__item">
+															<textarea placeholder="例）大分県大分市三川新町1丁目2番23号" name="address" cols="50" rows="4" class="address-text form-textarea form-text p-region p-locality p-street-address p-extended-address"><?php echo e($form->get('address')); ?></textarea>
+														</li>
+													</ul>
 													<?php echo $form->error('zip', '<div class="alert">', '</div>'); ?>
 													<?php echo $form->error('address', '<div class="alert">', '</div>'); ?>
 												</td>
@@ -149,7 +156,7 @@ require_once("./src/bootstrap.php");
 											<tr>
 												<th>
 													<div class="_flex_">
-														<span class="_black_ text16">希望勤務地<br><span class="text12">（複数選択可）</span></span>
+														<span class="_black_ text16">希望勤務地<br class="pc_view"><span class="text12 textNormal">（複数選択可）</span></span>
 														<span class="label _red_">必須</span>
 													</div>
 												</th>
@@ -168,7 +175,7 @@ require_once("./src/bootstrap.php");
 												</td>
 											</tr>
 											<tr>
-												<th colspan="2" class="pb0">
+												<th colspan="2" class="pb0 pb20_sp">
 													<div class="_flex_">
 														<span class="_black_ text16">お問い合わせ内容詳細</span>
 														<span class="label _red_">必須</span>
@@ -187,24 +194,24 @@ require_once("./src/bootstrap.php");
 									<?php foreach($form->get_options('agreement') as $agreement) : ?>
 									<label class="form-check txt_mplus">
 										<input type="checkbox" name="agreement" id="agreement" class="__elem" value="<?php echo $agreement ?>"<?php echo $form->checked('agreement', $agreement) ?>>
-										<span class="__txt txt_bold text14"><?php echo $agreement ?></span>
+										<span class="__txt txt_bold text14 text15_sp"><?php echo $agreement ?></span>
 									</label>			
 									<?php endforeach; ?>
 									<?php if($form->error('agreement')) : ?><div class="alert txt_mplus">※個人情報取り扱いについてご同意いただけない場合は、ご利用いただけません。</div><?php endif; ?>
 									
-									<div class="box _outline_ text12 mt25">
+									<div class="box _outline_ text12 text13_sp mt25 mt20_sp">
 										<p class="mb5 txt_mplus">このフォームでお預かりする個人情報の取扱いについて</p>
 										<ol class="list-number txt_mplus">
 											<li class="list-number__item mb5">事業者の名称 エレホン・化成工業株式会社</li>
-											<li class="list-number__item mb5">個人情報の管理 連絡先：連絡先：TEL.<a href="tel:097-552-2251">097-552-2251</a> FAX.097-552-2213</li>
-											<li class="list-number__item mb5">個人情報の利用目的 お問い合わせ対応（本人への連絡を含む）のため</li>
+											<li class="list-number__item mb5">個人情報の管理 連絡先：<br class="sp_view">TEL.<a href="tel:097-552-2251">097-552-2251</a> <br class="sp_view">FAX.097-552-2213</li>
+											<li class="list-number__item mb5">個人情報の利用目的 お問い合わせ対応<br class="sp_view">（本人への連絡を含む）のため</li>
 											<li class="list-number__item">
 												個人情報の開示等の請求 ご本人様は、当社に対してご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または 消去、第三者への提供の停止）に関して、下記の当社問合わせ窓口に申し出ることができます。その際、当社はお客様ご本人を確認させていただいたうえで、合理的な期間内に対応いたします。
 												<div class="mt30 mb30 mt15_sp mb15_sp">
 													<p>【お問い合せ窓口】 <br class="sp_view">〒870-0141 大分県大分市三川新町1丁目2番23号<br>
 														エレホン・化成工業株式会社 個人情報お問い合わせ窓口<br>
 														<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#101;&#114;&#101;&#119;&#104;&#111;&#110;&#46;&#99;&#111;&#46;&#106;&#112;"><span class="__txt">&#105;&#110;&#102;&#111;&#64;&#101;&#114;&#101;&#119;&#104;&#111;&#110;&#46;&#99;&#111;&#46;&#106;&#112;</span></a><br>
-														TEL.<a href="tel:097-552-2251">097-552-2251</a>（受付時間 9:00～17:00※）<br>
+														TEL.<a href="tel:097-552-2251">097-552-2251</a><br class="sp_view">（受付時間 9:00～17:00※）<br>
 														※土・日曜日、祝日、年末年始、ゴールデンウィーク期間は翌営業日以降の対応とさせていただきます。</p>
 												</div>
 											</li>
@@ -238,7 +245,7 @@ require_once("./src/bootstrap.php");
 								<!-- .contents-side -->
 							</div>
 
-							<div class="box__inner mt80">
+							<div class="box__inner mt80 mt40_sp">
 								<div class="al-fc">
 									<button class="btn-arrow _blue_ _w-l_">
 										<span class="__txt">確認画面へ</span>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* ============================================================ */
+/* form */
+/* ============================================================ */
+/* contact-form */
+.contact-form {
+	padding-top: 56px;
+	margin-bottom: 56px;
+}
+
+.contact-form._confirm_ ,
+.contact-form._complete_ {
+	padding-top: 56px;
+}
+
+.contact-form__inner {
+	margin-top: -56px;
+	padding-top: 56px;
+}
+
+.contact-form .contents-main {
+	padding: 0 20px;
+}
+
+.contact-form .table .al-fl {
+	display: flex;
+}
+
+.contact-form .table .form-radio {
+	width: 33%;
+}
+
+.contact-form-flex {
+}
+
+.contact-form-flex__item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 0 10px;
+}
+
+.contact-form-flex__item:last-child {
+	margin: 0;
+}
+
+.contact-form-flex__item .__txt {
+	margin: 0 10px 0 0;
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	white-space: nowrap;
+}
+
+.contact-form-area {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact-form-area__item {
+	margin: 0 0 15px;
+	width: calc(100% / 2);
+	line-height: 1.4;
+}
+
+.contact-form .table .address-text  {
+	height: 70px;
+}
+
+.alert {
+	margin: 10px 0 0;
+	font-weight: 700;
+	color: var(--red);
+}
