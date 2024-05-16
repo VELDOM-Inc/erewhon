@@ -114,8 +114,20 @@
 	line-height: 1.6;
 }
 
+span.snav__link {
+	cursor: default;
+}
+
+.snav__link:hover ,
+span.snav__link.active ,
+span.snav__link.active:hover ,
 .snav__link.active {
 	opacity: 1;
+}
+
+span.snav__link:hover {
+	cursor: default;
+	opacity: 0.35;
 }
 
 .snav__link .__txt {
