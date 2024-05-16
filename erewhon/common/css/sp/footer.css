@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* ============================================================ */
+/* footer */
+/* ============================================================ */
+.footer {
+	background: #CDE1ED;
+	padding: 40px 20px;
+}
+
+.footer__inner {
+}
+
+.footer-logo {
+	width: 150px;
+	border-left: 5px solid var(--blue);
+	padding: 0 0 0 15px;
+	margin: 0 0 25px;
+}
+
+.footer-logo__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 0;
+}
+
+.footer__bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+/* .fnav
+------------------------------------------------------------ */
+.fnav {
+	order: 2;
+}
+
+.fnav__list {
+	margin: 0 0 20px;
+}
+
+.fnav__list:last-child {
+	margin: 0;
+}
+
+.fnav__item {
+	margin: 0 0 15px;
+	transform: rotate(0.05deg);
+	line-height: 1.2;
+}
+
+.fnav__item:last-child {
+	margin: 0;
+}
+
+.fnav__link {
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: 700;
+	position: relative;
+	letter-spacing: 0.9px;
+	color: var(--black);
+}
+
+/* ２カラムver */
+.fnav__list._flex_ {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 0 30px;
+}
+
+.fnav__list._flex_ .fnav__item {
+	width: 50%;
+}
+
+.fnav__list._flex_ .fnav__link {
+	width: 100%;
+	display: block;
+}
+
+.fnav__inner {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.fnav__inner .fnav__link {
+	width: 25%;
+  display: block;
+}
+
+.fnav-sub {
+	width: calc(100% - 25%);
+}
+
+.fnav-sub__inner {
+  margin-left: 40px;
+}
+ 
+.fnav-sub__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.fnav-sub__item:last-child {
+  margin-bottom: 0;
+}
+ 
+.fnav-sub__item::before {
+  content: "";
+  position: absolute;
+  top: -0.3em;
+  left: -26px;
+  width: 17px;
+  height: calc(100% + 18px);
+  border-left: 1px solid #60A6D2;
+}
+ 
+.fnav-sub__item:last-child::before {
+  height: 1em;
+}
+
+.fnav-sub__item:first-child::before {
+  top: 0.6em;
+  height: calc(1em + 20px);
+}
+ 
+.fnav-sub__item::after {
+  content: "";
+  position: absolute;
+  top: .6em;
+  left: -26px;
+  width: 17px;
+  border-bottom: 1px solid #60A6D2;
+}
+
+.fnav__inner .fnav__link::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  right: -1em;
+  width: 7px;
+  border-bottom: 1px solid #60A6D2;
+}
+
+.fnav-sub__link {
+	color: var(--black);
+	font-size: 1.3rem;
+	font-weight: 400;
+	letter-spacing: 0.75px;
+	line-height: 1.4;
+}
+
+/* .footer-btn
+------------------------------------------------------------ */
+.footer-btn {
+	margin: 0 0 20px;
+	order: 1;
+}
+
+.footer-btn__link {
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	min-width: auto;
+}
+
+/* ============================================================ */
+/* entry-btn */
+/* ============================================================ */
+.entry-btn {
+	position: fixed;
+	right: 0;
+	bottom: 15px;
+	z-index: 3; 
+	margin: 0 0 0 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;	
+}
+
+.entry-btn__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: var(--white);
+	border-top: 2px solid var(--navy);
+	border-bottom: 2px solid var(--navy);
+	border-left: 16px solid var(--navy);
+	color: var(--blue);
+	line-height: 1.2;
+	text-decoration: none;
+	transition: all .4s;
+	width: 162px;
+	height: 64px;
+	font-size: 1.4rem;
+	position: relative;
+}
+
+.entry-btn__link::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: -12px;
+	z-index: 2;
+	content: '';
+	background: var(--navy);
+	transform-origin: left top;
+	transform: scale(0, 1);
+	transition: transform .5s;
+}
+
+.entry-btn__link::after {
+	opacity: 0.25;
+	background: linear-gradient(270deg, #050044 2.12%, rgba(5, 0, 68, 0.00) 100%);
+	content: '';
+	z-index: -1;
+	position: absolute;
+	bottom: -6px;
+	right: -6px;
+	width: 162px;
+	height: 64px;
+}
+
+.entry-btn__link .__ico {
+	position: relative;
+	z-index: 3;
+	margin: 2px 0 0;
+}
+
+.entry-btn__link .__path {
+  transition: fill 0.5s;
+}
+
+.entry-btn__link .__txt {
+	transform: rotate(0.05deg);
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: 0.7px;
+	position: relative;
+	z-index: 3;
+	margin: 3px 0 0;
+}

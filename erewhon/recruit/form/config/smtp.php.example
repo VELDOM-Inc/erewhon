@@ -1,0 +1,9 @@
+<?php
+
+return array(
+	'host'     => 'mailtrap.io',
+	'port'     => 2525,
+	'auth'     => true,
+	'username' => '54494a978bc954a51',
+	'password' => '17f8a65ad21ac8'
+);

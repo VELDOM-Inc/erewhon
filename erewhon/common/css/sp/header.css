@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* ============================================================ */
+/* header */
+/* ============================================================ */
+.header {
+	width: 100%;
+	height: 56px;
+	padding: 0 12px 0 20px;
+	background: var(--white);
+	transition: all .3s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.noscript {
+	padding: 5px 15px;
+	background: var(--bg-gray);
+	color: var(--black-text);
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 56px;
+}
+
+.header-logo {
+	width: 190px;
+	border-left: 7px solid var(--blue);
+	padding: 0 0 0 10px;
+}
+
+.header-logo__link {
+	display: block;
+}
+
+/* .header-menu
+------------------------------------------------------------ */
+.header-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 32px;
+	height: 28px;
+	z-index: 10;
+	position: relative;
+}
+
+.header-menu .__txt {
+	line-height: 1.0;
+	font-size: 1.2rem;
+}
+
+.header-menu._active_ .__txt {
+	display: none;
+}
+
+.header-menu__inner {
+	position: relative;
+	width: 32px;
+	height: 28px;
+}
+
+.header-menu._active_ .header-menu__inner {
+	margin: 0;
+}
+
+.header-menu__item {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: var(--black);
+	transition: all 0.5s ease;
+}
+
+.header-menu__item:nth-of-type(1) { top: 0; }
+.header-menu__item:nth-of-type(2) { top: 12px; transform: scale(1, 1); }
+.header-menu__item:nth-of-type(3) { bottom: 0; }
+
+.header-menu._active_ .header-menu__item:nth-of-type(1) { transform: translateY(12px) rotate(-315deg); background: var(--black); }
+.header-menu._active_ .header-menu__item:nth-of-type(2) { opacity: 0; background: var(--black); transform: scale(0, 1); transform-origin: center top; }
+.header-menu._active_ .header-menu__item:nth-of-type(3) { transform: translateY(-12px) rotate(315deg); background: var(--black); } 
+
+._gnav-show_ .gnav {
+	z-index: 1;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.gnav {
+}
+
+/* .gnav
+------------------------------------------------------------ */
+.gnav {
+  position: fixed;
+	left: 0;
+	top: 56px;
+	width: 100%;
+	height: calc(100% - 56px);
+	padding: 30px 20px 40px;
+	background: #eef6fb;
+	opacity: 0;
+	transition: all 0.3s ease;
+	color: var(--black);
+	overflow-y: auto;
+	overscroll-behavior-y: contain;
+	pointer-events: none;
+}
+
+.gnav__inner {
+}
+
+.gnav__list {
+	margin: 0 0 25px;
+}
+
+.gnav__item {
+	margin: 0 0 30px;
+	transform: rotate(0.05deg);
+	line-height: 1.2;
+}
+
+.gnav__item:last-child {
+	margin: 0;
+}
+
+.gnav__link {
+	font-size: 1.8rem;
+	line-height: 1.2;
+	font-weight: 700;
+	position: relative;
+	letter-spacing: 0.9px;
+}
+
+.gnav__detail {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.gnav__detail .gnav__link {
+	width: 25%;
+  display: block;
+}
+
+.gnav-sub {
+	width: calc(100% - 25%);
+}
+
+.gnav-sub__inner {
+  margin-left: 48px;
+}
+ 
+.gnav-sub__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.gnav-sub__item:last-child {
+  margin-bottom: 0;
+}
+ 
+.gnav-sub__item::before {
+  content: "";
+  position: absolute;
+  top: -0.3em;
+  left: -30px;
+  width: 18px;
+  height: calc(100% + 20px);
+  border-left: 1px solid #60A6D2;
+}
+ 
+.gnav-sub__item:last-child::before {
+  height: calc(1em + 2px);
+}
+
+.gnav-sub__item:first-child::before {
+  top: 0.8em;
+  height: calc(1em + 20px);
+}
+
+.gnav__list._group_ .gnav-sub__item:first-child::before {
+  height: calc(100% + 20px);
+}
+ 
+.gnav-sub__item::after {
+  content: "";
+  position: absolute;
+  top: .8em;
+  left: -30px;
+  width: 18px;
+  border-bottom: 1px solid #60A6D2;
+}
+
+.gnav__detail .gnav__link::after {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  right: -1.0em;
+  width: 6px;
+  border-bottom: 1px solid #60A6D2;
+}
+
+.gnav-sub__link {
+	color: var(--black);
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.75px;
+	line-height: 1.4;
+	display: block;
+}
+
+

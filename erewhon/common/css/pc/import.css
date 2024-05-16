@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&display=swap);
+@import url(//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap);
+@import url(//fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap);
+@import url("/erewhon/common/css/reset.css");
+@import url("/erewhon/common/css/icon.css");
+@import url("/erewhon/common/css/pc/general.css");
+@import url("/erewhon/common/css/pc/common.css");
+@import url("/erewhon/common/css/pc/header.css");
+@import url("/erewhon/common/css/pc/contents.css");
+@import url("/erewhon/common/css/pc/footer.css");
+@import url("/erewhon/common/css/pc/everyday.css");
+@import url("/erewhon/common/css/pc/interview.css");
+@import url("/erewhon/common/css/pc/application.css");
+@import url("/erewhon/common/css/pc/form.css");
+@import url("/erewhon/common/css/pc/recruit.css");

@@ -1,0 +1,7 @@
+Options +Includes
+AddHandler server-parsed html
+
+ErrorDocument 403 /erewhon/403.html
+ErrorDocument 404 /erewhon/404.html
+ErrorDocument 500 /erewhon/500.html
+ErrorDocument 503 /erewhon/503.html

@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* ============================================================ */
+/* 基本設定 */
+/* ============================================================ */
+html {
+	/*overflow-y: scroll;*/
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--black);
+	font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	text-align: center;
+	-webkit-text-size-adjust: none;
+}
+
+._gnav-show_ {
+	overflow-y: hidden;
+	height: 100%;
+}
+
+.pc_view {
+	display: none !important;
+}
+
+.wrapper {
+	font-size: 1.4rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	text-align: left;
+	/*contain: paint;*/
+	font-weight: 400;
+	line-height: 2.0;
+	letter-spacing: 0.7px;
+}
+
+img {
+	width: 100%;
+}
+
+:root{
+	--red: #C63838;
+  --blue: #2389CB;
+  --white: #fff;
+  --black: #313131;
+	--navy: #050044;
+	--light-blue: rgba(35, 137, 203, 0.08);
+	--gray: rgba(71, 71, 71, 0.08);
+	--line-gray: rgba(49, 49, 49, 0.25);
+	--bg-h2: 1px;
+}
+
+/* ============================================================ */
+/* リンク設定 */
+/* ============================================================ */
+a {
+	text-decoration: none;
+	color: var(--blue);
+}
+
+a[href*="tel:"] {
+	cursor: pointer;
+	color: var(--blue);
+}
+
+a[href*="tel:"]:hover .__txt {
+	background: none;
+}
+
+.link-opacity {
+}
+
+.link-arrow {
+	display: flex;
+	line-height: 1.5;
+}
+
+.link-arrow__ico {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 8px;
+	height: 15px;
+	margin: 3px 10px 0 0;
+	color: var(--green);
+}
+
+/* link-more */
+.link-more {
+	color: var(--blue);
+	text-align: center;
+}
+
+.link-more::after {
+	background: url("../../img/common/bg_link_arrow_blue.svg") center center no-repeat;
+	background-size: cover;
+	content: "";
+	display: block;
+	width: 239px;
+	height: 11px;
+	margin: 5px 0 0;
+}
+
+.link-more._white_ {
+	color: var(--white); 
+}
+
+.link-more._white_::after {
+	background: url("../../img/common/bg_link_arrow_white.svg") center center no-repeat;
+	background-size: cover;
+}
+
+.link-more .__txt {
+	max-width: 133px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	transition: all .3s;
+	background: none;
+}
+
+/* テキストスタイル
+------------------------------------------------------------ */
+.txt_medium {
+  font-weight: 500;
+}
+
+.txt_bold {
+  font-weight: 700;
+}
+
+.txt_extrabold {
+  font-weight: 800;
+}
+
+.txt_noto {
+	font-family: 'Noto Sans JP', sans-serif;
+	transform: rotate(0deg);
+}
+
+.txt_mplus {
+	transform: rotate(0.05deg);
+}
+
+
+/* アニメーション
+------------------------------------------------------------ */
+
