@@ -51,8 +51,10 @@ require_once("./src/bootstrap.php");
 						<div class="contact-form__inner">
 							<div class="box__inner mb80 mb0_sp">
 								<h2 class="h4" data-aos="fade-bottom" data-aos-once="true">会社のこと、<br class="sp_view">採用に関することなど、<br>どうぞお気軽に<br class="sp_view">お問い合わせください。</h2>
-								<p class="txt_center txt_mplus" data-aos="fade-bottom" data-aos-once="true" data-aos-delay="500">3営業日以内にご回答させていただきます。<br>
-								フォームでのお問い合わせには、<br class="sp_view">時間を要する場合がございます。<br class="sp_view">お急ぎの方は、<a href="tel:097-552-2251">お電話</a>にてお問い合わせ下さい。</p>
+								<div data-aos="fade-bottom" data-aos-once="true" data-aos-delay="500">
+									<p class="txt_center txt_mplus">3営業日以内にご回答させていただきます。<br>
+									フォームでのお問い合わせには、<br class="sp_view">時間を要する場合がございます。<br class="sp_view">お急ぎの方は、<a href="tel:097-552-2251">お電話</a>にてお問い合わせ下さい。</p>
+								</div>
 							</div>
 
 							<div class="contents-inner" id="js-scrollspy">

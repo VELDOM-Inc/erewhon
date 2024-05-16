@@ -29,6 +29,8 @@
 }
 
 .application__block._white_ .application__contents {
+	margin-top: -120px;
+	padding-top: 120px;
 	margin-bottom: 135px;
 }
 
