@@ -43,7 +43,7 @@ return array(
 
 		// 送信先メールアドレス
 		// class（区分）の選択によって送信先を変更する例
-		'to' => 'kanae.t.0322@gmail.com',
+		'to' => 'info@erewwhon.co.jp',
 
 		// CCメールアドレス
 		'cc' => '',
