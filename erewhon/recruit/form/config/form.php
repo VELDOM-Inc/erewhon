@@ -45,7 +45,7 @@ return array (
 	),
 	array (
 		'field' => 'comment',
-		'label' => 'お問い合わせ内容',
+		'label' => 'お問い合わせ内容詳細',
 		'rules' => 'trim|required'
 	),
 	array (

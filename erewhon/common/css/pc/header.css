@@ -16,12 +16,12 @@
 	top: 0;
 	z-index: 20;
 }
-/*
-@media only screen and (min-width: 768px) and (max-width: 980px) {
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
 	.header {
-		padding: 20px 30px;
+		padding: 0 30px;
 	}
-}*/
+}
 
 .noscript {
 	padding: 5px 15px;
@@ -35,6 +35,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 	height: 108px;
 }
 
@@ -42,6 +43,12 @@
 	width: 190px;
 	border-left: 7px solid var(--blue);
 	padding: 0 0 0 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.header-logo {
+		width: 170px;
+	}
 }
 
 .header-logo__link {
@@ -68,12 +75,24 @@
 	transform: rotate(0.05deg);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.hnav__item {
+		margin: 0 20px 0 0;
+	}
+}
+
 .hnav__item:last-child {
 	margin: 0;
 }
 
 .hnav__link {
 	color: var(--black);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.hnav__link {
+		font-size: 1.3rem;
+	}
 }
 
 .hnav__link .__txt {
@@ -132,21 +151,31 @@
 .header-menu._active_ .header-menu__item:nth-of-type(3) { transform: translateY(-8px) rotate(315deg); background: var(--black); } 
 
 ._gnav-show_ .gnav {
-	z-index: 1;
+	z-index: 10;
 	opacity: 1;
 	pointer-events: auto;
+	height: calc(100vh - 108px);
+	padding: 120px 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1125px) {
+	._gnav-show_ .gnav {
+		padding: 50px 30px;
+	}
 }
 
 /* .gnav
 ------------------------------------------------------------ */
 .gnav {
-	position: fixed;
+	/*position: fixed;*/
+	position: -webkit-sticky;
+  position: sticky;
 	left: 0;
 	top: 108px;
 	z-index: 1;
 	width: 100%;
-	height: calc(100% - 108px);
-	padding: 120px 30px;
+	height: 0;
+	/*height: calc(100% - 108px);*/
 	background: #eef6fb;
 	opacity: 0;
 	transition: all 0.3s ease;
@@ -154,12 +183,6 @@
 	overflow-y: auto;
 	overscroll-behavior-y: contain;
 	pointer-events: none;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1125px) {
-	.gnav {
-		padding: 50px 30px;
-	}
 }
 
 .gnav__inner {

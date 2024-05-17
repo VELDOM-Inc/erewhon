@@ -92,9 +92,10 @@
 .header-menu._active_ .header-menu__item:nth-of-type(3) { transform: translateY(-12px) rotate(315deg); background: var(--black); } 
 
 ._gnav-show_ .gnav {
-	z-index: 1;
+	z-index: 10;
 	opacity: 1;
 	pointer-events: auto;
+	transition: all 0.3s ease;
 }
 
 .gnav {
