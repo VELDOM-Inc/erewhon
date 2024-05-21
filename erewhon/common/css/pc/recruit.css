@@ -59,8 +59,9 @@
 
 .recruit-visual__ttl .txtInner {
   animation-name: show;
-  animation-duration: 3.0s;
+  animation-duration: 4.0s;
   animation-fill-mode: backwards;
+	animation-timing-function: ease-in-out;
 }
 
 @keyframes show {
