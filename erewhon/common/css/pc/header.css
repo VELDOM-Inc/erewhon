@@ -99,6 +99,11 @@
   background: linear-gradient(0deg, var(--black), var(--black)) no-repeat right bottom / 0 var(--bg-h2);
 }
 
+.hnav__link.active .__txt {
+	border-bottom: 1px solid var(--black);
+	background: none;
+}
+
 /* .header-menu
 ------------------------------------------------------------ */
 .header-menu {

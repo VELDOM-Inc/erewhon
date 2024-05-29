@@ -66,7 +66,7 @@ $(window).on('load', function() {
 });
 
 // gnavi アクティブ
-document.querySelectorAll('.gnav__link').forEach(link => {
+document.querySelectorAll('.hnav__link').forEach(link => {
   if(link.href === window.location.href){
     link.classList.add('active')
   }
