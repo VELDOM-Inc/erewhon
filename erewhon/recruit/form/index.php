@@ -73,7 +73,6 @@ require_once("./src/bootstrap.php");
 												<th class="">
 													<div class="_flex_">
 														<span class="_black_ text16">希望職種</span>
-														<span class="label _red_">必須</span>
 													</div>
 												</th>
 												<td class="<?php if ($form->is_error('class')) : ?>error<?php endif; ?>">
@@ -114,7 +113,6 @@ require_once("./src/bootstrap.php");
 												<th class="">
 													<div class="_flex_">
 														<span class="_black_ text16">ご住所</span>
-														<span class="label _red_">必須</span>
 													</div>
 												</th>
 												<td class="">
@@ -147,7 +145,6 @@ require_once("./src/bootstrap.php");
 												<th class="">
 													<div class="_flex_">
 														<span class="_black_ text16">電話番号</span>
-														<span class="label _red_">必須</span>
 													</div>
 												</th>
 												<td class="<?php if ($form->is_error('tel')) : ?>error<?php endif; ?>">
@@ -159,7 +156,6 @@ require_once("./src/bootstrap.php");
 												<th>
 													<div class="_flex_">
 														<span class="_black_ text16">希望勤務地<br class="pc_view"><span class="text12 textNormal">（複数選択可）</span></span>
-														<span class="label _red_">必須</span>
 													</div>
 												</th>
 												<td class="<?php if ($form->is_error('subject')) : ?>error<?php endif; ?>">
