@@ -72,7 +72,6 @@
 
 .fnav__item {
 	margin: 0 0 10px;
-	transform: rotate(0.05deg);
 	line-height: 1.2;
 }
 
@@ -181,7 +180,6 @@
 
 .fnav._phase_ .fnav__item {
 	margin: 0 30px 0 0;
-	transform: rotate(0.05deg);
 	line-height: 1.2;
 }
 
@@ -249,7 +247,7 @@
 	border-top: 2px solid var(--navy);
 	border-bottom: 2px solid var(--navy);
 	border-left: 16px solid var(--navy);
-	color: var(--blue);
+	/*color: var(--blue);*/
 	line-height: 1.2;
 	text-decoration: none;
 	transition: all .4s;
@@ -290,17 +288,19 @@
 	transform: scale(1, 1);
 }
 
-.entry-btn__link:hover {
+.entry-btn__link:hover ,
+.entry-btn__link:hover .txt_mplus {
 	color: var(--white);
 }
 
 .entry-btn__link .__ico {
 	position: relative;
 	z-index: 3;
+	margin: 0 0 10px;
 }
 
 .entry-btn__link .__path {
-    transition: fill 0.5s;
+  transition: fill 0.5s;
 }
 
 .entry-btn__link:hover .__path {
@@ -308,11 +308,17 @@
 }
 
 .entry-btn__link .__txt {
-	transform: rotate(0.05deg);
 	line-height: 1.2;
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	margin: 10px 0 0;
+	position: relative;
+	z-index: 3;
+}
+
+.entry-btn__link .txt_mplus {
+	color: var(--blue);
+	transition: all .4s;
 	position: relative;
 	z-index: 3;
 }

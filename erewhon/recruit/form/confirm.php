@@ -56,35 +56,35 @@ require_once("./src/bootstrap.php");
 									<table class="table _no-border_ _sp-col1_ mb45 mb0_sp">
 										<tbody class="table__body">
 											<tr>
-												<th class="_black_ text16">希望職種</th>
-												<td><?php echo e($form->get('class')); ?></td>
+												<th class="_black_ text16"><p class="txt_mplus">希望職種</p></th>
+												<td><p class="txt_mplus"><?php echo e($form->get('class')); ?></p></td>
 											</tr>
 											<tr>
-												<th class="_black_ text16">お名前</th>
-												<td><?php echo e($form->get('name')); ?>（<?php echo e($form->get('kana')); ?>）</td>
+												<th class="_black_ text16"><p class="txt_mplus">お名前</p></th>
+												<td><p class="txt_mplus"><?php echo e($form->get('name')); ?>（<?php echo e($form->get('kana')); ?>）</p></td>
 											</tr>
 											<tr>
-												<th class="_black_ text16">ご住所</th>
+												<th class="_black_ text16"><p class="txt_mplus">ご住所</p></th>
 												<td>
-													<span class="text16 txt_bold">〒</span> <?php echo e($form->get('zip')); ?>
-													<?php echo e($form->get('address')); ?>
+													<p class="txt_mplus"><span class="txt_bold text16">〒</span> <?php echo e($form->get('zip')); ?></p>
+													<p class="txt_mplus"><?php echo e($form->get('address')); ?></p>
 												</td>
 											</tr>
 											<tr>
-												<th class="_black_ text16">メールアドレス</th>
-												<td><?php echo e($form->get('email')); ?></td>
+												<th class="_black_ text16"><p class="txt_mplus">メールアドレス</p></th>
+												<td><p class="txt_mplus"><?php echo e($form->get('email')); ?></p></td>
 											</tr>
 											<tr>
-												<th class="_black_ text16">電話番号</th>
-												<td><?php echo e($form->get('tel')); ?></td>
+												<th class="_black_ text16"><p class="txt_mplus">電話番号</p></th>
+												<td><p class="txt_mplus"><?php echo e($form->get('tel')); ?></p></td>
 											</tr>
 											<tr>
-												<th class="_black_ text16">希望勤務地</th>
-												<td><?php echo e($form->get('subject', ', ')); ?></td>
+												<th class="_black_ text16"><p class="txt_mplus">希望勤務地</p></th>
+												<td><p class="txt_mplus"><?php echo e($form->get('subject', ', ')); ?></p></td>
 											</tr>
 											<tr>
-												<th class="_black_ text16">お問い合わせ内容詳細</th>
-												<td><?php echo nl2br(e($form->get('comment'))); ?></td>
+												<th class="_black_ text16"><p class="txt_mplus">お問い合わせ内容詳細</p></th>
+												<td><p class="txt_mplus"><?php echo nl2br(e($form->get('comment'))); ?></p></td>
 											</tr>
 										</tbody>
 									</table>
@@ -96,17 +96,17 @@ require_once("./src/bootstrap.php");
 										<ul class="snav__list">
 											<li class="snav__item">
 												<span class="snav__link">
-													<span class="__txt">お問い合わせ内容の入力</span>
+													<span class="__txt txt_mplus">お問い合わせ内容の入力</span>
 												</span>
 											</li>
 											<li class="snav__item">
 												<span class="snav__link active">
-													<span class="__txt">入力内容の確認</span>
+													<span class="__txt txt_mplus">入力内容の確認</span>
 												</span>
 											</li>
 											<li class="snav__item">
 												<span class="snav__link">
-													<span class="__txt">送信完了</span>
+													<span class="__txt txt_mplus">送信完了</span>
 												</span>
 											</li>
 										</ul>
@@ -118,10 +118,10 @@ require_once("./src/bootstrap.php");
 							<div class="al-fc box__inner">
 								<button type="button" class="btn-arrow _gray_ _order2_ _w-l_ _cancel_" onclick="window.location='./#form';">
 									<span class="__ico icon-txt_link_arrow_left" aria-hidden="true"></span>
-									<span class="__txt">修正する</span>
+									<span class="__txt txt_mplus">修正する</span>
 								</button>
 								<button type="submit" class="btn-arrow _blue_ _order1_ mb15_sp _w-l_">
-									<span class="__txt">入力内容を送信する</span>
+									<span class="__txt txt_mplus">入力内容を送信する</span>
 									<span class="__ico icon-txt_link_arrow" aria-hidden="true"></span>
 								</button>
 							</div>

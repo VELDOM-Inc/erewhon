@@ -31,7 +31,6 @@
 
 .everyday-block-detail {
 	width: calc((100% - 37.5%) - 80px);
-	transform: rotate(0.05deg);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {

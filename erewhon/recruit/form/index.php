@@ -71,12 +71,12 @@ require_once("./src/bootstrap.php");
 										<tbody class="table__body">
 											<tr>
 												<th class="">
-													<div class="_flex_">
+													<div class="_flex_ txt_mplus">
 														<span class="_black_ text16">希望職種</span>
 													</div>
 												</th>
 												<td class="<?php if ($form->is_error('class')) : ?>error<?php endif; ?>">
-													<div class="al-fl">
+													<div class="al-fl txt_mplus">
 														<?php foreach($form->get_options('class') as $class) : ?>
 														<label class="form-radio mr40 mr0_sp mb10">
 															<input type="radio" name="class" value="<?php echo $class ?>" class="__elem" <?php echo $form->checked('class', $class) ?>>
@@ -84,77 +84,77 @@ require_once("./src/bootstrap.php");
 														</label>
 														<?php endforeach; ?>
 													</div>
-													<?php echo $form->error('class', '<div class="alert">', '</div>'); ?>
+													<?php echo $form->error('class', '<div class="alert txt_mplus">', '</div>'); ?>
 												</td>
 											</tr>
 											<tr>
 												<th>
 													<div class="_flex_">
-														<span class="_black_ text16">お名前</span>
-														<span class="label _red_">必須</span>
+														<span class="_black_ text16 txt_mplus">お名前</span>
+														<span class="label _red_ txt_mplus">必須</span>
 													</div>
 												</th>
 												<td class="">
 													<ul class="contact-form-flex">
-														<li class="contact-form-flex__item">
+														<li class="contact-form-flex__item txt_mplus">
 															<span class="__txt">姓名</span>
 															<input type="text" name="name" class="form-text _w-m_" value="<?php echo e($form->get('name')); ?>" placeholder="例）山田太郎">
 														</li>
-														<li class="contact-form-flex__item">
+														<li class="contact-form-flex__item txt_mplus">
 															<span class="__txt">フリガナ</span>
 															<input type="text" name="kana" class="form-text _w-m_" value="<?php echo e($form->get('kana')); ?>" placeholder="例）ヤマダタロウ">
 														</li>
 													</ul>
-													<?php echo $form->error('name', '<div class="alert">', '</div>'); ?>
-													<?php echo $form->error('kana', '<div class="alert">', '</div>'); ?>
+													<?php echo $form->error('name', '<div class="alert txt_mplus">', '</div>'); ?>
+													<?php echo $form->error('kana', '<div class="alert txt_mplus">', '</div>'); ?>
 												</td>
 											</tr>
 											<tr>
-												<th class="">
+												<th class="txt_mplus">
 													<div class="_flex_">
 														<span class="_black_ text16">ご住所</span>
 													</div>
 												</th>
 												<td class="">
 													<ul class="contact-form-flex">
-														<li class="contact-form-flex__item">
+														<li class="contact-form-flex__item txt_mplus">
 															<span class="text16 txt_bold __txt">〒</span> 
 															<input type="text" name="zip" class="form-text _w-m_ p-postal-code" value="<?php echo e($form->get('zip')); ?>" placeholder="例）0000000">
 														</li>
-														<li class="contact-form-flex__item">
+														<li class="contact-form-flex__item txt_mplus">
 															<textarea placeholder="例）大分県大分市三川新町1丁目2番23号" name="address" cols="50" rows="4" class="address-text form-textarea form-text p-region p-locality p-street-address p-extended-address"><?php echo e($form->get('address')); ?></textarea>
 														</li>
 													</ul>
-													<?php echo $form->error('zip', '<div class="alert">', '</div>'); ?>
-													<?php echo $form->error('address', '<div class="alert">', '</div>'); ?>
+													<?php echo $form->error('zip', '<div class="alert txt_mplus">', '</div>'); ?>
+													<?php echo $form->error('address', '<div class="alert txt_mplus">', '</div>'); ?>
 												</td>
 											</tr>
 											<tr>
 												<th>
 													<div class="_flex_">
-														<span class="_black_ text16">メールアドレス</span>
-														<span class="label _red_">必須</span>
+														<span class="_black_ text16 txt_mplus">メールアドレス</span>
+														<span class="label _red_ txt_mplus">必須</span>
 													</div>
 												</th>
 												<td class="<?php if ($form->is_error('email')) : ?>error<?php endif; ?>">
-													<input type="text" name="email" class="form-text" value="<?php echo e($form->get('email')); ?>" placeholder="例）info＠erewhon.jp">
-													<?php echo $form->error('email', '<div class="alert">', '</div>'); ?>
+													<input type="text" name="email" class="form-text txt_mplus" value="<?php echo e($form->get('email')); ?>" placeholder="例）info＠erewhon.jp">
+													<?php echo $form->error('email', '<div class="alert txt_mplus">', '</div>'); ?>
 												</td>
 											</tr>
 											<tr>
 												<th class="">
-													<div class="_flex_">
+													<div class="_flex_ txt_mplus">
 														<span class="_black_ text16">電話番号</span>
 													</div>
 												</th>
 												<td class="<?php if ($form->is_error('tel')) : ?>error<?php endif; ?>">
-													<input type="text" name="tel" class="form-text" value="<?php echo e($form->get('tel')); ?>" placeholder="例）0000000000">
-													<?php echo $form->error('tel', '<div class="alert">', '</div>'); ?>
+													<input type="text" name="tel" class="form-text txt_mplus" value="<?php echo e($form->get('tel')); ?>" placeholder="例）0000000000">
+													<?php echo $form->error('tel', '<div class="alert txt_mplus">', '</div>'); ?>
 												</td>
 											</tr>
 											<tr>
 												<th>
-													<div class="_flex_">
+													<div class="_flex_ txt_mplus">
 														<span class="_black_ text16">希望勤務地<br class="pc_view"><span class="text12 textNormal">（複数選択可）</span></span>
 													</div>
 												</th>
@@ -164,26 +164,26 @@ require_once("./src/bootstrap.php");
 															<li class="contact-form-area__item">
 																<label class="form-check">
 																	<input type="checkbox" name="subject[]" value="<?php echo $subject ?>" class="__elem" <?php echo $form->checked('subject', $subject) ?>>
-																	<span class="__txt"><?php echo $subject ?></span>
+																	<span class="__txt txt_mplus"><?php echo $subject ?></span>
 																</label>
 															</li>
 														<?php endforeach; ?>
 													</ul>
-													<?php echo $form->error('subject', '<div class="alert">', '</div>'); ?>
+													<?php echo $form->error('subject', '<div class="alert txt_mplus">', '</div>'); ?>
 												</td>
 											</tr>
 											<tr>
 												<th colspan="2" class="pb0 pb20_sp">
 													<div class="_flex_">
-														<span class="_black_ text16">お問い合わせ内容詳細</span>
-														<span class="label _red_">必須</span>
+														<span class="_black_ text16 txt_mplus">お問い合わせ内容詳細</span>
+														<span class="label _red_ txt_mplus">必須</span>
 													</div>
 												</th>
 											</tr>
 											<tr>
 												<td colspan="2" class="pb0">
-													<textarea name="comment" cols="50" rows="4" class="form-textarea"><?php echo e($form->get('comment')); ?></textarea>
-													<?php echo $form->error('comment', '<div class="alert">', '</div>'); ?>												
+													<textarea name="comment" cols="50" rows="4" class="form-textarea txt_mplus"><?php echo e($form->get('comment')); ?></textarea>
+													<?php echo $form->error('comment', '<div class="alert txt_mplus">', '</div>'); ?>												
 												</td>
 											</tr>
 										</tbody>
@@ -224,17 +224,17 @@ require_once("./src/bootstrap.php");
 										<ul class="snav__list">
 											<li class="snav__item">
 												<span class="snav__link active">
-													<span class="__txt">お問い合わせ内容の入力</span>
+													<span class="__txt txt_mplus">お問い合わせ内容の入力</span>
 												</span>
 											</li>
 											<li class="snav__item">
 												<span class="snav__link">
-													<span class="__txt">入力内容の確認</span>
+													<span class="__txt txt_mplus">入力内容の確認</span>
 												</span>
 											</li>
 											<li class="snav__item">
 												<span class="snav__link">
-													<span class="__txt">送信完了</span>
+													<span class="__txt txt_mplus">送信完了</span>
 												</span>
 											</li>
 										</ul>
@@ -246,7 +246,7 @@ require_once("./src/bootstrap.php");
 							<div class="box__inner mt80 mt40_sp" data-aos="fade-bottom" data-aos-once="true">
 								<div class="al-fc">
 									<button class="btn-arrow _blue_ _w-l_">
-										<span class="__txt">確認画面へ</span>
+										<span class="__txt txt_mplus">確認画面へ</span>
 										<span class="__ico icon-txt_link_arrow" aria-hidden="true"></span>
 									</button>
 								</div>

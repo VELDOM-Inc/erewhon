@@ -145,7 +145,6 @@ span.snav__link:hover {
 }
 
 .snav__link .__txt {
-	transform: rotate(0.05deg);
 	display: inline-block;
 	background: none;
 }
@@ -403,7 +402,6 @@ span.snav__link:hover {
 	background-clip: padding-box;
 	text-align: left;
 	vertical-align: middle;
-	transform: rotate(0.05deg);
 	line-height: 1.6;
 }
 
@@ -569,7 +567,6 @@ span.snav__link:hover {
 .btn-arrow .__txt {
 	font-weight: 700;
 	background: none;
-	transform: rotate(0.05deg);
 	letter-spacing: 0.7px;
 }
 

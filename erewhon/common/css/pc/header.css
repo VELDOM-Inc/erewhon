@@ -72,7 +72,6 @@
 
 .hnav__item {
 	margin: 0 45px 0 0;
-	transform: rotate(0.05deg);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
@@ -217,7 +216,6 @@
 
 .gnav__item {
 	margin: 0 0 25px;
-	transform: rotate(0.05deg);
 	line-height: 1.2;
 }
 

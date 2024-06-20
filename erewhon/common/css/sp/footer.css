@@ -45,7 +45,6 @@
 
 .fnav__item {
 	margin: 0 0 15px;
-	transform: rotate(0.05deg);
 	line-height: 1.2;
 }
 
@@ -238,7 +237,6 @@
 }
 
 .entry-btn__link .__txt {
-	transform: rotate(0.05deg);
 	line-height: 1.2;
 	font-weight: 700;
 	letter-spacing: 0.7px;

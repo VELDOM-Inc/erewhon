@@ -52,7 +52,7 @@
 
 								<div class="al-fc">
 									<a href="/erewhon/recruit/" class="btn-arrow _blue_ _m0_">
-										<span class="__txt">採用情報TOP</span>
+										<span class="__txt txt_mplus">採用情報TOP</span>
 										<span class="__ico icon-btn_arrow_small" aria-hidden="true"></span>
 									</a>
 								</div>
@@ -64,17 +64,17 @@
 									<ul class="snav__list">
 										<li class="snav__item">
 											<span class="snav__link">
-												<span class="__txt">お問い合わせ内容の入力</span>
+												<span class="__txt txt_mplus">お問い合わせ内容の入力</span>
 											</span>
 										</li>
 										<li class="snav__item">
 											<span class="snav__link">
-												<span class="__txt">入力内容の確認</span>
+												<span class="__txt txt_mplus">入力内容の確認</span>
 											</span>
 										</li>
 										<li class="snav__item">
 											<span class="snav__link active">
-												<span class="__txt">送信完了</span>
+												<span class="__txt txt_mplus">送信完了</span>
 											</span>
 										</li>
 									</ul>
